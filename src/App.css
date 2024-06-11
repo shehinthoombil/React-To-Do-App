@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #020631;
+  background-color: #020631; 
+  font-family: Arial, sans-serif;
 }
 
 .app {
@@ -12,31 +14,31 @@ body {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
+  background-color: #ececec;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  
 }
 
-.app .mainHeading h1 {
+.app .mainHeading h1,
+.app .subHeading h2 {
   text-align: center;
 }
 
 .app h1,
-h2 {
-  color: white;
+.app h2 {
+  color: #333;
 }
 
 .app .input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.app .input {
   margin-top: 0.8em;
   width: 20em;
   height: 2em;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f0f0f0;;
   border-radius: 6px;
   padding: 5px;
 }
@@ -44,15 +46,15 @@ h2 {
 .app .input input {
   width: 100%;
   height: 1.6em;
-  border-color: transparent;
-  outline-color: transparent;
+  border: none; 
+  outline: none;
 }
 
 .app i {
   cursor: pointer;
   font-size: larger;
   font-weight: 900;
-  color: grey;
+  color: #888;
   margin-right: 5px;
 }
 .app .todos {
@@ -65,12 +67,13 @@ h2 {
   margin-top: 0.8em;
   width: 20em;
   height: 2em;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 6px;
   padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 .app .todos .todo .left {
   display: flex;
@@ -83,5 +86,36 @@ h2 {
   font-size: medium;
   font-weight: 700;
   font-style: normal;
-  color: grey;
+  color: #333;
+}
+.footer{
+  margin-top: 20%;
+}
+
+.error {
+  color: red;
+  text-align: center; 
+  margin-top: 0.5em; 
+}
+
+.jobdone {
+  margin-top: 50px;
+}
+
+.jobdone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  color: #333;
+}
+
+.jobdone h4,
+.jobdone h5 {
+  margin-bottom: 0.5em;
+}
+
+.jobdone h6 {
+  margin: 0.2em 0;
 }
